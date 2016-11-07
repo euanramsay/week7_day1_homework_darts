@@ -22,16 +22,16 @@ public class PlayerTest {
 
     @Before
     public void beforeEach() {
-        player1 = new Player("Michael van Gerwen", "Mighty Mike", 1);
-        player2 = new Player("Gary Anderson", "The Flying Scotsman", 2);
-        player3 = new Player("Phil Taylor", "The Power", 3);
-        player4 = new Player("Adrian Lewis", "Jackpot", 4);
-        player5 = new Player("Peter Wright", "Snakebite", 5);
-        player6 = new Player("James Wade", "The Machine", 6);
-        player7 = new Player("Robert Thornton", "The Thorn", 7);
-        player8 = new Player("Michael Smith", "Bully Boy", 8);
-        player9 = new Player("Dave Chisnall", "Chizzy", 8);
-        player10 = new Player("Raymond van Barneveld", "Barney", 10);
+        player1 = new Player("Michael van Gerwen", "Mighty Mike");
+        player2 = new Player("Gary Anderson", "The Flying Scotsman");
+        player3 = new Player("Phil Taylor", "The Power");
+        player4 = new Player("Adrian Lewis", "Jackpot");
+        player5 = new Player("Peter Wright", "Snakebite");
+        player6 = new Player("James Wade", "The Machine");
+        player7 = new Player("Robert Thornton", "The Thorn");
+        player8 = new Player("Michael Smith", "Bully Boy");
+        player9 = new Player("Dave Chisnall", "Chizzy");
+        player10 = new Player("Raymond van Barneveld", "Barney");
 
         }
 
@@ -43,5 +43,11 @@ public class PlayerTest {
     @Test
     public void canGetNickname() {
         assertEquals("The Flying Scotsman", player2.getNickname());
+    }
+
+    @Test
+    public void canSetCurrentRanking() {
+        player1.setCurrentRanking(1);
+        assertEquals(1, player1.getCurrentRanking());
     }
 }

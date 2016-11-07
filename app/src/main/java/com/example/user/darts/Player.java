@@ -10,10 +10,10 @@ public class Player {
     private String nickname;
     private int currentRanking;
 
-    public Player(String name, String nickname, int currentRanking) {
+    public Player(String name, String nickname) {
         this.name = name;
         this.nickname = nickname;
-        this.currentRanking = currentRanking;
+
     }
 
     public String getName() {
@@ -22,6 +22,14 @@ public class Player {
 
     public String getNickname() {
         return nickname;
+    }
+
+    public void setCurrentRanking(int currentRanking) {
+        this.currentRanking = currentRanking;
+    }
+
+    public int getCurrentRanking() {
+        return currentRanking;
     }
 
 
