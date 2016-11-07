@@ -20,5 +20,9 @@ public class Player {
         return name;
     }
 
+    public String getNickname() {
+        return nickname;
+    }
+
 
 }
